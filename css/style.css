@@ -100,6 +100,10 @@ a:active {
     margin-bottom: 0;
 }
 
+.schedule-heading {
+    text-align: center;
+}
+
 .schedule-info {
     margin-bottom: 0.5em;
     text-align: center;
