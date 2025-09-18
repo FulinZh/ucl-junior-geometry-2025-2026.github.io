@@ -21,6 +21,11 @@ body {
     margin-right: 1em;
 }
 
+.header-bar-logo {
+    width: 100%;       /* 占满整行 */
+    text-align: right; /* 靠右 */
+    margin: 0.5em 0;
+}
 
 /* 链接：深蓝 → 青绿 hover */
 a {
