@@ -1,194 +1,86 @@
 body {
     margin: 0;
-    color: #1c1c1c;  /* 柔和深墨色 */
-    background-color: #faf9f6; /* 象牙白底色 */
+    color: #1e3a5f;  /* 深蓝 */
+    background-color: #e0f1f9; /* 浅蓝全局底色 */
     font-size: 1.1rem;
-    font-family: "Helvetica Neue", "Segoe UI", "Georgia", serif;
+    font-family: "Helvetica Neue", "Georgia", serif;
 
     background-image: url('../assets/exp_sphere1.jpg?v=1');
     background-repeat: no-repeat;
-    background-size: cover;       /* 背景充满 */
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* 固定背景，艺术展览感 */
+    background-attachment: fixed;
 }
 
-/* 链接：蓝黑 → 金色 */
+/* 链接：深蓝 -> 金黄 */
 a {
-    color: #2a4d69;
+    color: #1e3a5f;
     text-decoration: none;
     transition: color 0.3s ease, border-bottom 0.3s ease;
     border-bottom: 1px solid transparent;
 }
 
 a:hover {
-    color: #f4a261;  /* 暖金色 */
-    border-bottom: 1px solid #f4a261;
+    color: #f4d35e;  /* 金黄 hover */
+    border-bottom: 1px solid #f4d35e;
 }
 
 a:active {
-    color: #e76f51; /* 艺术红土色 */
+    color: #f6aa1c; /* 更深的橙黄 */
 }
 
 /* 顶部导航栏 */
 .header-bar {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);   /* 毛玻璃 */
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid #ccc;
+    background: rgba(250, 243, 221, 0.9); /* 柔和米黄，呼应背景 */
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid #1e3a5f;
     padding: 0.8em 1em;
     overflow: auto;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.header-bar-left {
-    text-align: center;
-}
-
-.header-bar-right > ul {
-    text-align: center;
-    padding-left: 0;
-    margin: 1em;
-}
-
-.header-bar-right > ul > li {
-    display: inline-block;
+    box-shadow: 0 2px 6px rgba(30,58,95,0.1);
 }
 
 .header-bar-right > ul > li > a {
-    font-size: 1rem;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.5em 1em;
-    color: #2a4d69;
-    transition: all 0.3s ease;
+    color: #1e3a5f;
 }
 
 .header-bar-right > ul > li > a:hover {
-    color: #f4a261;
-    transform: translateY(-2px);
-}
-
-.header-bar-right > ul > li > a:active {
-    color: #e76f51;
+    color: #f4d35e;
 }
 
 /* 主体内容块 */
 .main-content {
     padding: 2em;
     background: rgba(255, 255, 255, 0.92);
-    backdrop-filter: blur(6px);
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    overflow: auto;
+    box-shadow: 0 4px 20px rgba(30,58,95,0.1);
 }
 
-.main-content h2 {
-    text-align: center;
-    font-family: "Garamond", "Georgia", serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #1c1c1c;
-    margin-bottom: 1em;
+.main-content h2, .main-content h3 {
+    color: #1e3a5f;
 }
 
-.main-content h3 {
-    font-family: "Palatino Linotype", "Georgia", serif;
-    font-size: 1.3rem;
-    color: #2c2c34;
-    font-weight: 500;
-    margin-top: 1.5em;
-}
-
-/* 日程列表 */
-.schedule-list {
-    padding: 0;
-}
-
+/* 日程卡片 */
 .schedule-list li {
-    list-style: none;
-    background: #ffffffcc;
-    border: 1px solid #eee;
+    background: #faf3ddcc; /* 半透明米黄 */
+    border: 1px solid #1e3a5f;
     border-radius: 10px;
     padding: 1.5em;
     margin: 1.5em 0;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .schedule-list li:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-.schedule-info {
-    margin-bottom: 0.6em;
-    text-align: center;
-    font-weight: bold;
-    color: #2a4d69;
+    box-shadow: 0 4px 16px rgba(30,58,95,0.2);
 }
 
 /* 页脚 */
 footer {
-    background: rgba(255, 255, 255, 0.85);
-    color: #444;
-    border-top: 1px solid #ddd;
-    margin-top: 2em;
-    font-family: "Helvetica Neue", "Segoe UI", sans-serif;
+    background: #1e3a5f;
+    color: #faf3dd;
+    border-top: 2px solid #f4d35e;
 }
 
 footer a {
-    color: #2a4d69;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #f4a261;
-}
-
-footer a:active {
-    color: #e76f51;
-}
-
-.footer-content {
-    padding: 0 1em 1em;
-    font-size: 0.9rem;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.footer-content h3 {
-    text-align: center;
-    font-family: "Garamond", "Georgia", serif;
-    font-weight: 500;
-}
-
-/* 响应式优化 */
-@media screen and (min-width: 1025px) {
-    .main-content,
-    .footer-content {
-        max-width: 1000px;
-        margin: auto;
-    }
-}
-
-@media screen and (min-width: 961px) {
-    .header-bar {
-        display: flex;
-        align-items: center;
-    }
-
-    .header-bar-left {
-        margin-left: 4em;
-        margin-right: auto;
-    }
-
-    .header-bar-right {
-        margin-left: auto;
-        margin-right: 4em;
-    }
-
-    .header-bar-right > ul > li > a {
-        font-size: 1.1rem;
-    }
+    color: #f4d35e;
 }
