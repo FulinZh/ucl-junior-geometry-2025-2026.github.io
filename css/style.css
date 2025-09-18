@@ -9,6 +9,19 @@ body {
     background-attachment: fixed; /* 固定渐变背景，像艺术画布 */
 }
 
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-bar-logo img {
+    height: 60px;   /* 控制高度 */
+    width: auto;    /* 保持比例 */
+    margin-right: 1em;
+}
+
+
 /* 链接：深蓝 → 青绿 hover */
 a {
     color: #1d6c8b;
